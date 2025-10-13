@@ -9,5 +9,5 @@ export class AppMarkenxHeaderComponent {
   @Input()
   public title!: string;
   @Input()
-  public userName!: string;;
+  public userName!: string;
 }
