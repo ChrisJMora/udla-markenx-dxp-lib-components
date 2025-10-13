@@ -1,0 +1,27 @@
+<div class="menu-item">
+  <div *ngIf="isSelected && !isSubItem" class="menu-item__divider"></div>
+
+  <button
+    pButton
+    [routerLink]="item.route"
+    class="menu-item__content"
+    type="button"
+    [class.menu-item__content--subgroup]="isSubItem"
+    [class.menu-item__content--selected]="isSelected"
+  >
+    <i [ngClass]="item.icon" class="menu-item__icon" pButtonIcon></i>
+    <span class="menu-item__label" pButtonLabel>{{ item.label }}</span>
+  </button>
+</div>
+
+<div *ngIf="isSelected && hasSubItems" class="menu-item-group">
+  <ul class="menu-item-group__subitems">
+    <li *ngFor="let subItem of item.subItems" class="menu-item-group__subitem">
+      <app-markenx-menu-item
+        [father]="this"
+        [item]="subItem"
+        [isSubItem]="true"
+      ></app-markenx-menu-item>
+    </li>
+  </ul>
+</div>
