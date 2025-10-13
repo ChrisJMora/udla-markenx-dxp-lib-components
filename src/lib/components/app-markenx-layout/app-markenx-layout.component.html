@@ -1,0 +1,19 @@
+<div class="app">
+  <header class="app__header">
+    <app-markenx-header [title]="headerTitle" [userName]="userName"></app-markenx-header>
+  </header>
+  <div class="app__layout">
+    <nav class="app__sidebar">
+      <app-markenx-menu [rootItems]="menuItems"></app-markenx-menu>
+    </nav>
+    <p-divider type="solid" layout="vertical" class="app__divider"></p-divider>
+    <main class="app__content">
+      <div class="app__breadcrumb">
+        <app-markenx-breadcrumb></app-markenx-breadcrumb>
+      </div>
+      <div class="app__view">
+        <ng-content></ng-content>
+      </div>
+    </main>
+  </div>
+</div>
