@@ -1,3 +1,6 @@
-<app-markenx-header title="Title" userName="Username"></app-markenx-header>
-<app-markenx-breadcrumb></app-markenx-breadcrumb>
-<app-markenx-menu [rootItems]="menuItems"></app-markenx-menu>
+<app-markenx-layout
+  headerTitle="ISWZ3104-INTRODUCCIÓN A MARKETING I"
+  userName="Christian Jácome"
+  [menuItems]="menuItems">
+  <router-outlet></router-outlet>
+</app-markenx-layout>
