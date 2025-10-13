@@ -1,1 +1,51 @@
-/* You can add global styles to this file, and also import other style files */
+$primary-color-white: #FFFFFF;
+$primary-color-black: #222222;
+$primary-color-red: #8B0E2A;
+
+$primary-hover-red: #FFF0F3;
+
+$gray-color-light: #EEEEEE;
+$gray-color-light-20: #E9E9E9;
+$gray-color-light-40: #C4C4C4;
+
+$gray-color-dark: #717171;
+$gray-color-dark-80: #5D5D5D;
+$gray-color-dark-100: #1E1E1E;
+
+$shadow-color: rgb(34, 34, 34, 0.3);
+
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url('./assets/fonts/BebasNeue-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Barlow';
+  src: url('./assets/fonts/Barlow/Barlow-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Barlow Bold';
+  src: url('./assets/fonts/Barlow/Barlow-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: bold;
+}
+
+$font-h1: 'Bebas Neue', sans-serif;
+$font-normal-regular: 'Barlow', sans-serif;
+$font-normal-bold: 'Barlow Bold', sans-serif;
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+app-root {
+  display: block;
+  height: 100%;
+}

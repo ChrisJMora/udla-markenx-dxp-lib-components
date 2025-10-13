@@ -1,0 +1,87 @@
+@use "../../../styles.scss" as *;
+
+.app-header {
+  background-color: $primary-color-red;
+  box-shadow: 0 4px 4px $shadow-color;
+  height: 92px;
+  width: 100%;
+
+  &__content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+  }
+
+  &__left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    flex: 1 1 auto;
+    min-width: 0;
+
+    & > .app-header__logo {
+      padding-bottom: 12px;
+    }
+
+    & > .app-header__title {
+      margin: 0;
+      font-family: $font-h1;
+      font-size: 40px;
+      color: $primary-color-white;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      flex: 1 1 auto;
+    }
+  }
+
+  &__right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 186px;
+    gap: 1rem;
+
+    & > .app-header__user-info {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      white-space: nowrap;
+
+      & > .app-header__welcome {
+        font-family: $font-normal-bold;
+        font-size: 0.875rem;
+        text-align: right;
+        color: $primary-color-white;
+      }
+
+      & > .app-header__user-name {
+        font-family: $font-normal-regular;
+        font-size: 1rem;
+        text-align: right;
+        color: $primary-color-white;
+      }
+    }
+
+    & > .app-header__divider {
+      width: 1px;
+      height: 60px;
+      background-color: $primary-color-white;
+    }
+
+    & > .app-header__logout {
+      cursor: pointer;
+
+      i {
+        font-size: 1.5rem;
+        color: $primary-color-white;
+      }
+    }
+  }
+}
