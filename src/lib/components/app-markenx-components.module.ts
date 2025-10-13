@@ -4,10 +4,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { BreadcrumbModule } from 'primeng/breadcrumb';
+import { DividerModule } from 'primeng/divider';
 import { AppMarkenxHeaderComponent } from './app-markenx-header/app-markenx-header.component';
 import { AppMarkenxMenuComponent } from './app-markenx-menu/app-markenx-menu.component';
 import { AppMarkenxMenuItemComponent } from './app-markenx-menu/app-markenx-menu-item/app-markex-menu-item.component';
 import { AppMarkenxBreadcrumbComponent } from './app-markenx-breadcrumb/app-markenx-breadcrumb.component';
+import { AppMarkenxLayoutComponent } from './app-markenx-layout/app-markenx-layout.component';
 
 @NgModule({
   declarations: [
@@ -15,14 +17,16 @@ import { AppMarkenxBreadcrumbComponent } from './app-markenx-breadcrumb/app-mark
     AppMarkenxMenuComponent,
     AppMarkenxMenuItemComponent,
     AppMarkenxBreadcrumbComponent,
+    AppMarkenxLayoutComponent,
   ],
   exports: [
     AppMarkenxHeaderComponent,
     AppMarkenxMenuComponent,
     AppMarkenxMenuItemComponent,
     AppMarkenxBreadcrumbComponent,
+    AppMarkenxLayoutComponent,
   ],
-  imports: [BrowserModule, BrowserAnimationsModule, BreadcrumbModule],
+  imports: [BrowserModule, BrowserAnimationsModule, BreadcrumbModule, DividerModule],
   providers: [],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })

@@ -1,0 +1,20 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  .app__layout {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    max-width: 1649px;
+    margin: 0 auto;
+
+    .app__content {
+      display: flex;
+      flex-direction: column;
+      width: 858px;
+      padding-top: 24px;
+    }
+  }
+}
