@@ -1,11 +1,23 @@
 {
-  "name": "markenx-components",
-  "version": "0.0.1",
+  "name": "@chrisjmora/markenx-components",
+  "version": "1.0.0",
   "peerDependencies": {
     "@angular/common": "^15.0.0",
     "@angular/core": "^15.0.0"
   },
   "dependencies": {
     "tslib": "^2.3.0"
+  },
+  "keywords": [
+    "components",
+    "markex"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ChrisJMora/udla-markenx-dxp-lib-components.git"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
