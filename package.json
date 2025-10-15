@@ -18,7 +18,9 @@
     "@angular/platform-browser": "^15.0.0",
     "@angular/platform-browser-dynamic": "^15.0.0",
     "@angular/router": "^15.0.0",
-    "bootstrap": "^5.3.2",
+    "@chrisjmora/markenx-dxp-assets": "^1.1.2",
+    "bootstrap": "^5.3.8",
+    "markenx-components": "file:dist/markenx-components",
     "primeicons": "^7.0.0",
     "primeng": "^15.4.1",
     "rxjs": "~7.5.0",
@@ -37,6 +39,7 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.0.0",
+    "ng-packagr": "^15.0.0",
     "typescript": "~4.8.2"
   }
 }
