@@ -1,6 +1,6 @@
 {
   "name": "@chrisjmora/markenx-dxp-components",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "peerDependencies": {
     "@angular/common": "^15.0.0",
     "@angular/core": "^15.0.0"
@@ -19,5 +19,15 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "ngPackage": {
+    "$schema": "../../node_modules/ng-packagr/ng-package.schema.json",
+    "dest": "../../dist/@chrisjmora/markenx-dxp-components",
+    "lib": {
+      "entryFile": "src/public-api.ts"
+    },
+    "allowedNonPeerDependencies": [
+      "tslib"
+    ]
   }
 }
