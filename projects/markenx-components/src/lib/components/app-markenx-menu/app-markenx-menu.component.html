@@ -1,0 +1,9 @@
+<div class="menu">
+  <app-markenx-menu-item
+    *ngFor="let item of rootItems"
+    class="sidebar__item"
+    [father]="this"
+    [item]="item"
+    [class.sidebar__item--has-submenu]="(item.subItems?.length ?? 0) > 0"
+  ></app-markenx-menu-item>
+</div>
